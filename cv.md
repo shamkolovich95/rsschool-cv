@@ -1,5 +1,6 @@
 ## CV
-# Shamkolovich Sergey ![](https://bipbap.ru/wp-content/uploads/2020/04/Risunki-dlya-srisovki-dlya-malchikov-i-parnej-samye-prikolnye-i-krutye-16-1.jpg)
+# Shamkolovich Sergey 
+![](https://bipbap.ru/wp-content/uploads/2020/04/Risunki-dlya-srisovki-dlya-malchikov-i-parnej-samye-prikolnye-i-krutye-16-1.jpg)
 # Contacts 
 <!--Списки-->
 * Adress: st. O.Koshevogo; Minsk, Belarus;
