@@ -1,56 +1,9 @@
-/*Обнуление*/
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-a,
-a:visited {
-  text-decoration: none;
-  color: black;
-}
-
-li {
-  list-style-type: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
-
-/*--------------------*/
-
-
-
 body {
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.header {}
+/*! Навигационное меню */
 
 .header-menu {
   padding: 30px 20px;
@@ -64,8 +17,12 @@ body {
 
 .menu-list li {
   margin-right: 30px;
-  font-size: 20px;
+  font-size: 1.25rem;
   position: relative;
+}
+
+.menu-list li:last-child {
+  margin-right: 0;
 }
 
 .menu-list li:before {
@@ -85,6 +42,7 @@ body {
   transform: scaleX(1);
 }
 
+/*! Аватарка правая и левая секция */
 
 .header-section {
   display: flex;
@@ -98,11 +56,12 @@ body {
 
 .section-avatar {
   width: 40%;
+  min-height: 200px;
   background-color: rgb(243, 244, 245);
 }
 
 .section_image {
-  padding: 50px 0px;
+  margin: 50px 0px;
   text-align: center;
 }
 
@@ -115,10 +74,11 @@ body {
   margin: 0px auto 40px;
   position: relative;
   line-height: 60px;
+  text-align: center;
 }
 
 .section_name {
-  font-size: 40px;
+  font-size: 2.5rem;
 }
 
 .section_name::after {
@@ -132,7 +92,7 @@ body {
 }
 
 .section_who {
-  font-size: 30px;
+  font-size: 1.9rem;
 }
 
 .section_who::after {
@@ -145,38 +105,32 @@ body {
   background-color: rgb(240, 174, 18);
 }
 
+/*! Общий контейнер */
+
 .wraper {
   display: flex;
-  min-height: 100%;
-  flex: 1 1 auto;
+  min-height: 100vh;
 }
 
 .aside {
   width: 40%;
   background-color: rgb(243, 244, 245);
-  ;
 }
 
 .aside-container {
   margin: 0px 50px 0px 50px;
 }
 
-.aside-section {}
-
-.section_contacts {}
-
-.contacts_title {}
+/*! Секция боковая контакты */
 
 .title {
-  font-size: 30px;
+  font-size: 1.9rem;
   margin-bottom: 30px;
   color: rgb(240, 174, 18);
 }
 
-.contacts_list {}
-
 .list li {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 30px;
 }
 
@@ -190,38 +144,30 @@ body {
   padding: 0 0 0 30px;
   background-position: 0px 6px;
   background-repeat: no-repeat;
-  background-size: 20px;
+  background-size: 1.25rem;
 }
 
 .contacts_list li:nth-child(1) {
-  background-image: url(./img/icons/vk.svg);
+  background-image: url(../img/icons/vk.svg);
 }
 
 .contacts_list li:nth-child(2) {
-  background-image: url(./img/icons/github.svg);
+  background-image: url(../img/icons/github.svg);
 }
 
 .contacts_list li:nth-child(3) {
-  background-image: url(./img/icons/telegram.svg);
+  background-image: url(../img/icons/telegram.svg);
 }
 
 .contacts_list li:nth-child(4) {
-  background-image: url(./img/icons/email.svg);
+  background-image: url(../img/icons/email.svg);
 }
 
 .contacts_list li:nth-child(5) {
-  background-image: url(./img/icons/map.svg);
+  background-image: url(../img/icons/map.svg);
 }
 
-.aside-section {}
-
-.section {}
-
-.section_skills {}
-
-.skills_title {}
-
-.title {}
+/*! Секция боковая навыки */
 
 .skills_list li,
 .course_list li {
@@ -235,45 +181,32 @@ body {
   font-size: 20px;
 }
 
-.section_english {}
-
-.english_title {}
-
-.english_text {}
+/*! Секция боковая английский */
 
 .text {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 30px;
 }
+
+/* Конец боковой секции */
 
 .main {
   width: 55%;
   margin-left: 50px;
 }
 
-.main-container {}
+/*! Центральная секция о себе */
 
-.main-section {}
+.summary_text {
+  padding: 0px 10px 0px 0px;
+  text-align: start;
+}
 
-.section_summary {}
+/*! Центральная секция код */
 
-.summary_title {}
+/*! Центральная секция образование */
 
-.summary_text {}
-
-.section-code {}
-
-.code_title {}
-
-.code_text {}
-
-.section-education {}
-
-.education_title {}
-
-.education_list {}
-
-li>span {
+.education_list li>span {
   background-color: rgba(240, 174, 18, 0.7);
   padding: 5px 8px;
   border-radius: 10px;
@@ -283,18 +216,16 @@ li>span {
   margin-bottom: 25px;
 }
 
-.section-course {}
+/*! Центральная секция курсы */
 
-.course_title {}
-
-.course_list {}
+/*! Footer */
 
 .footer {
   background: rgb(243, 244, 245);
   background: -moz-linear-gradient(left, rgb(243, 244, 245) 0%, rgb(163, 163, 163) 95%, rgb(196, 196, 196) 100%);
   background: -webkit-linear-gradient(left, rgb(243, 244, 245) 0%, rgb(163, 163, 163) 95%, rgb(196, 196, 196) 100%);
   background: linear-gradient(to right, rgb(243, 244, 245) 0%, rgb(163, 163, 163) 95%, rgb(196, 196, 196) 100%);
-  padding: 30px;
+  padding: 30px 0px;
 }
 
 .footer-items {
@@ -303,27 +234,26 @@ li>span {
   align-items: center;
 }
 
-.footer-items>div {
-  margin-right: 300px;
+.footer-items div {
+  margin-right: 320px;
 }
 
-.footer-items>div:first-child,
-.footer-items>div:last-child {
+.footer-items div:last-child {
   margin: 0px;
 }
 
-.footer-text p {
-  padding: 10px 10px;
+.footer-text {
+  padding: 10px;
 }
 
 .footer-link img {
-  width: 40px;
+  width: 3rem;
 }
 
 .footer-school img {
-  width: 100px;
+  width: 7rem;
 }
 
 .footer-youtube img {
-  width: 50px;
+  width: 3rem;
 }
