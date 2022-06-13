@@ -1,0 +1,259 @@
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*! Навигационное меню */
+
+.header-menu {
+  padding: 30px 20px;
+  background-color: rgb(240, 174, 18);
+}
+
+.menu-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-list li {
+  margin-right: 30px;
+  font-size: 1.25rem;
+  position: relative;
+}
+
+.menu-list li:last-child {
+  margin-right: 0;
+}
+
+.menu-list li:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  height: 1px;
+  width: 100%;
+  transform: scaleX(0);
+  transition: 0.5s;
+  background-color: black;
+}
+
+.menu-list li:hover:before {
+  width: 100%;
+  transform: scaleX(1);
+}
+
+/*! Аватарка правая и левая секция */
+
+.header-section {
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section-avatar {
+  width: 40%;
+  min-height: 200px;
+  background-color: rgb(243, 244, 245);
+}
+
+.section_image {
+  margin: 50px 0px;
+  text-align: center;
+}
+
+.section_image img {
+  border: 15px solid rgb(240, 174, 18);
+  border-radius: 50%;
+}
+
+.section_items {
+  margin: 0px auto 40px;
+  position: relative;
+  line-height: 60px;
+  text-align: center;
+}
+
+.section_name {
+  font-size: 2.5rem;
+}
+
+.section_name::after {
+  content: "";
+  position: absolute;
+  top: 48%;
+  left: 20%;
+  height: 3px;
+  width: 60%;
+  background-color: rgb(240, 174, 18);
+}
+
+.section_who {
+  font-size: 1.9rem;
+}
+
+.section_who::after {
+  content: "";
+  position: absolute;
+  top: 95%;
+  left: -30%;
+  height: 3px;
+  width: 160%;
+  background-color: rgb(240, 174, 18);
+}
+
+/*! Общий контейнер */
+
+.wraper {
+  display: flex;
+  min-height: 100vh;
+}
+
+.aside {
+  width: 40%;
+  background-color: rgb(243, 244, 245);
+}
+
+.aside-container {
+  margin: 0px 50px 0px 50px;
+}
+
+/*! Секция боковая контакты */
+
+.title {
+  font-size: 1.9rem;
+  margin-bottom: 30px;
+  color: rgb(240, 174, 18);
+}
+
+.list li {
+  font-size: 1.25rem;
+  line-height: 30px;
+}
+
+.list li a:hover {
+  text-decoration: underline;
+  transition: 0.3s;
+  color: rgb(240, 174, 18);
+}
+
+.contact_list__image {
+  padding: 0 0 0 30px;
+  background-position: 0px 6px;
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+}
+
+.contacts_list li:nth-child(1) {
+  background-image: url(../img/icons/vk.svg);
+}
+
+.contacts_list li:nth-child(2) {
+  background-image: url(../img/icons/github.svg);
+}
+
+.contacts_list li:nth-child(3) {
+  background-image: url(../img/icons/telegram.svg);
+}
+
+.contacts_list li:nth-child(4) {
+  background-image: url(../img/icons/email.svg);
+}
+
+.contacts_list li:nth-child(5) {
+  background-image: url(../img/icons/map.svg);
+}
+
+/*! Секция боковая навыки */
+
+.skills_list li,
+.course_list li {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+.skills_list li::marker,
+.course_list li::marker {
+  color: rgb(240, 174, 18);
+  font-size: 20px;
+}
+
+/*! Секция боковая английский */
+
+.text {
+  font-size: 1.25rem;
+  line-height: 30px;
+}
+
+/* Конец боковой секции */
+
+.main {
+  width: 55%;
+  margin-left: 50px;
+}
+
+/*! Центральная секция о себе */
+
+.summary_text {
+  padding: 0px 10px 0px 0px;
+  text-align: start;
+}
+
+/*! Центральная секция код */
+
+/*! Центральная секция образование */
+
+.education_list li>span {
+  background-color: rgba(240, 174, 18, 0.7);
+  padding: 5px 8px;
+  border-radius: 10px;
+}
+
+.education_list li:nth-child(2n) {
+  margin-bottom: 25px;
+}
+
+/*! Центральная секция курсы */
+
+/*! Footer */
+
+.footer {
+  background: rgb(243, 244, 245);
+  background: -moz-linear-gradient(left, rgb(243, 244, 245) 0%, rgb(163, 163, 163) 95%, rgb(196, 196, 196) 100%);
+  background: -webkit-linear-gradient(left, rgb(243, 244, 245) 0%, rgb(163, 163, 163) 95%, rgb(196, 196, 196) 100%);
+  background: linear-gradient(to right, rgb(243, 244, 245) 0%, rgb(163, 163, 163) 95%, rgb(196, 196, 196) 100%);
+  padding: 30px 0px;
+}
+
+.footer-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-items div {
+  margin-right: 320px;
+}
+
+.footer-items div:last-child {
+  margin: 0px;
+}
+
+.footer-text {
+  padding: 10px;
+}
+
+.footer-link img {
+  width: 3rem;
+}
+
+.footer-school img {
+  width: 7rem;
+}
+
+.footer-youtube img {
+  width: 3rem;
+}
