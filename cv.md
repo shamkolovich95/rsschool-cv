@@ -17,10 +17,24 @@ I am developing person at the programming sphere. My profession mechanical engin
 * VS Code
 
 # Code examples
-
 ```
 const helloWorld = () => {
 return String.fromCharCode(72, 101, 108, 108, 111,
 44, 32, 87, 111, 114, 108, 100, 33);
 };
 ```
+
+# My products
+* [Travel](https://rolling-scopes-school.github.io/shamkolovich95-JSFEPRESCHOOL2022Q2/Travel/)
+* [Momentum](https://shamkolovich95-momentum.netlify.app/)
+* [Code Jam](https://rolling-scopes-school.github.io/shamkolovich95-JSFEPRESCHOOL2022Q2/codejam-eldritch/)
+
+# Education
+* Belarusian State Technological University (2012 - 2016).
+    + Faculty of chemical technology and engineering.
+* Minsk State Polytechnic College (2016 - 2020).
+    + Installation and operation of electrical equipment.
+* Rolling-scopes stage 0.
+
+# English
+A2 (Pre-intermediate).
